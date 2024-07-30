@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png">
+
+    <title>Product Preview Card Component</title>
+  </head>
+  
+  <body class="bg-cream">
+    <main>
+      <div class="w-full h-screen px-7 py-7 md:flex md:items-center">
+        <div class="flex flex-col mx-auto bg-white rounded-lg shadow-sm overflow-hidden sm:w-[450px] md:w-[600px] md:h-[450px] md:flex-row">
+          <div class="md:w-1/2">
+            <picture>
+              <source media="(min-width:640px)" srcset="images/image-product-desktop.jpg">
+              <img src="images/image-product-mobile.jpg" alt="product-photo" class="w-full h-full object-cover">
+            </picture>
+          </div>
+
+          <div class="flex flex-col px-6 py-7 min-h-[370px] min-w-[325px] justify-between md:w-1/2 md:px-8 md:py-9">
+            <span class="text-darkGrayishBlue">PERFUME</span>
+            
+            <h1 class="font-heading font-bold text-4xl text-veryDarkBlue">
+              Gabrielle Essence Eau De Parfum
+            </h1>
+
+            <p class="text-darkGrayishBlue font-body text-sm my-2">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+
+            <div class="flex justify-start items-center gap-3 my-2">
+              <span class="font-heading text-4xl text-darkCyan">$149.99</span>
+
+              <span class="text-darkGrayishBlue text-base line-through">
+                $169.99
+              </span>
+            </div>
+
+            <button class="bg-darkCyan hover:bg-veryDarkBlue text-white rounded-md flex gap-2 justify-center items-center w-full h-12 font-bold">
+              <img src="images/icon-cart.svg" alt="cart-icon">
+              <span>Add to Cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
